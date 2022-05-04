@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body onload="onload()">
+  <div class="alert" id="alert" style="display:none">
+    <span class="closebtn">&times;</span>
+    <strong>Danger!</strong> <span id="alert-danger-text"></span>
+  </div>
+
+  <div class="alert success" id="alert-success" style="display:none">
+    <span class="closebtn">&times;</span>
+    <strong>Success!</strong> <span id="alert-success-text"></span>
+  </div>
+
+  <div class="alert info" id="alert-info">
+    <span class="closebtn">&times;</span>
+    <strong>Info!</strong> <span id="alert-info-text"></span>
+  </div>
+
+  <div class="alert warning" id="alert-warning" style="display:none">
+    <span class="closebtn">&times;</span>
+    <strong>Warning!</strong> <span id="alert-warning-text"></span>
+  </div>
+
+  <textarea id="text-to-save" placeholder="put some text here..."></textarea>
+  <input type="submit" value="save" onclick="save()"></input>
+  <input type="submit" value="remove" onclick="noMore()"></input>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
